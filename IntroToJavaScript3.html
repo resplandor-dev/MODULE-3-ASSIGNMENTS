@@ -6,20 +6,20 @@
         </title>
     </head> 
       
-
+<body>
        
           
-        <button onclick = "gfg_Run()"> 
+        <button onclick = "webpage()"> 
             Click here
         </button>
           
-        <p id = "GFG_DOWN" style =
+        <p id = "webpage" style =
             "color: white; font-size: 20px; font-weight: bold;">
         </p>
           
         <script>
-            var el_up = document.getElementById("GFG_UP");
-            var el_down = document.getElementById("GFG_DOWN");
+            var el_up = document.getElementById("webpage");
+            var el_down = document.getElementById("webpage");
             var str = "Click on button to change the background color";
           
             el_up.innerHTML = str;
@@ -28,7 +28,7 @@
                 document.body.style.background = color;
             }
               
-            function gfg_Run() {
+            function webpage() {
                 changeColor('blue');
                 el_down.innerHTML = "Background Color changed";
             }         
