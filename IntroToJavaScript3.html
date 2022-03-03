@@ -1,37 +1,27 @@
-<!DOCTYPE HTML> 
-<html> 
-    <head> 
-        <title> 
-           Change a webpage color
-        </title>
-    </head> 
-      
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Change a webpage color
+    </title>
+</head>
 <body>
-       
-          
-        <button onclick = "webpage()"> 
-            Click here
-        </button>
-          
-        <p id = "webpage" style =
-            "color: white; font-size: 20px; font-weight: bold;">
-        </p>
-          
-        <script>
-            var el_up = document.getElementById("webpage");
-            var el_down = document.getElementById("webpage");
-            var str = "Click on button to change the background color";
-          
-            el_up.innerHTML = str;
-          
-            function changeColor(color) {
-                document.body.style.background = color;
-            }
-              
-            function webpage() {
-                changeColor('blue');
-                el_down.innerHTML = "Background Color changed";
-            }         
-        </script> 
-    </body> 
-</html>                    
+    <button onclick="webpage()">
+        Click here
+    </button>
+    <p id="colorChangeParagraph" style="font-size: 20px; font-weight: bold" ;>
+        Click on button to change the background color </p>
+    <script>
+        var bodyColor = document.getElementById("colorChangeParagraph");
+        //bodyColor.innerHTML = "Background Color changed";
+        //console.log(bodyColor);
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+        function webpage() {
+            changeColor('blue');
+            bodyColor.innerHTML = "Background Color changed";
+        }
+    </script>
+</body>
+</html>
